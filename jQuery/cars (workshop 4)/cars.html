@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="sv">
+	<head>
+        <meta charset="utf-8" /> 
+        <title>
+			En komplett HTML5 sida!
+        </title>
+
+		<link rel="stylesheet" href="style/cars.css"  type="text/css" /> 
+		
+	</head>
+	<body>
+		
+		<div id="sitewrapper">
+		
+			<header>
+				<h1>Mina Bilar</h1>
+			</header>
+			
+			<div id="sitecontent">
+				
+				<p>Antal bilar i lager är idag <span>2</span>.</p>
+				<div>
+					Spara ny bil:
+					<form action="#" method="post">
+						<input type="text" id="txtFabrikat" name="txtFabrikat" placeholder="Fabrikat" />
+						<input type="text" id="txtModell" name="txtModell" placeholder="Modell" />
+						<input type="text" id="txtRegNr" name="txtRegNr" placeholder="Regnr" />
+						<br />
+						<input type="submit" id="btnSave" name="btnSave" value="Spara" />
+						<input type="reset" id="btnReset" name="btnReset" value="Rensa" />
+					</form>
+				</div>
+			
+				<div class="borderClass">
+					<p data-fabrikat="Audi">Fabrikat: Audi</p>
+					<p>Modell: R8</p>
+					<p data-regnr="ABC123">Regnr: ABC123</p>
+					<a href="#">Ta bort</a>
+				</div>
+	
+				<div class="borderClass">
+					<p data-fabrikat="Volvo">Fabrikat: Volvo</p>
+					<p>Modell: S60</p>
+					<p data-regnr="CBA321">Regnr: CBA321</p>
+					<a href="#">Ta bort</a>
+				</div>
+			
+				<div id="myId">
+					Företaget <span>Mina Bilar</span> säljer nya och begagnade bilar.
+				</div>
+			</div> 
+			<footer>Mina Bilar kontaktinformation</footer>
+		</div>
+		
+		<script
+		  src="https://code.jquery.com/jquery-3.3.1.min.js"
+		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		  crossorigin="anonymous">
+		</script>
+		
+		
+		<script src="script/cars.js"></script>
+		
+	</body>
+</html>
