@@ -1,0 +1,20 @@
+.divClass
+{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 1;
+    display: none;
+}
+
+@keyframes animation
+{
+    from { background-color: blue; }
+    to { background-color: red; }
+}
+
+.animation
+{
+    animation-name: animation;
+    animation-duration: 2s;
+}
