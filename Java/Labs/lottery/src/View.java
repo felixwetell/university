@@ -1,12 +1,8 @@
 import javax.swing.*;
-import java.awt.Frame;
 import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
-import java.util.*;
 
-public class Interface extends WindowAdapter
+public class View extends WindowAdapter
 {
     private JFrame frame;
     private JPanel panel;
@@ -19,24 +15,25 @@ public class Interface extends WindowAdapter
     private JMenuItem save;
     private JMenuItem exit;
 
-    private Listener listener;
+    private Control control;
 
-    public static void main( String[] args )
-    {
-        new Interface();
-    }
+    private FileHandling fileHandling;
 
-    public Interface()
+    public View()
     {
+        control = new Control( this );
+        fileHandling = FileHandling.getInstance();
+
         frame = new JFrame( "Lottery Row" );
         frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
         frame.setPreferredSize( new Dimension(600, 400) );
+        frame.addWindowListener(control);
 
         panel = new JPanel();
         textArea = new JTextArea();
 
         menuBar = new JMenuBar();
-        menu = new JMenu( "Arkiv" );
+        menu = new JMenu( "Archive" );
         clear = new JMenuItem( "Clear" );
         randomize = new JMenuItem( "Randomize" );
         open = new JMenuItem( "Open" );
@@ -50,6 +47,8 @@ public class Interface extends WindowAdapter
         menu.addSeparator();
         menu.add(exit);
 
+        textArea.setEditable( false );
+
         menuBar.add( menu );
         panel.add( textArea );
         frame.setJMenuBar ( menuBar );
@@ -60,13 +59,41 @@ public class Interface extends WindowAdapter
 
         for ( int i = 0 ; i <  menu.getItemCount(); i++ )
         {
-            JMenuItem item = menu.getItem(i);
-            item.addActionListener( listener );
+            if( i == 4 )
+            {
+                i = 5;
+            }
+
+            JMenuItem item;
+            item = menu.getItem( i );
+            item.addActionListener(control);
         }
     }
 
-    public static void main ()
+    public static void main( String[] args )
     {
-        new Interface();
+        FileHandling fileHandling = FileHandling.getInstance();
+        new View();
     }
+
+    public void printTextArea( String text )
+    {
+        textArea.append( text + "\n" );
+    }
+
+    public void clearTextArea()
+    {
+        textArea.setText( "" );
+    }
+
+    public String fetchText()
+    {
+        String text = textArea.getText();
+        if( !"".equals( text ) )
+        {
+            return text;
+        }
+        return null;
+    }
+
 }
