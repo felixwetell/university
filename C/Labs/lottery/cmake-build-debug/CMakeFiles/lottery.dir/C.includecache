@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/felix/Documents/Github/university/C/Labs/lottery/main.c
+stdio.h
+-
+stdlib.h
+-
+limits.h
+-
+string.h
+-
+time.h
+-
+
