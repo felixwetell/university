@@ -1,15 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <limits.h>
-#include <string.h>
-#include <time.h>
 #include "prefixes.h"
 
-int duplicate( int array[lotteryLength], int number )
+int duplicate( int array[maxColumns], int number )
 {
     int answer = 0, i;
 
-    for ( i = 0; i < lotteryLength; i++ )
+    for ( i = 0; i < maxColumns; i++ )
     {
         if ( array[i] == number )
         {
@@ -19,11 +14,11 @@ int duplicate( int array[lotteryLength], int number )
     return answer;
 }
 
-int * randomise ( int array[lotteryLength] )
+int * randomise ( int array[maxColumns] )
 {
     int random;
 
-    for ( int i = 0; i < lotteryLength; i++ )
+    for ( int i = 0; i < maxColumns; i++ )
     {
         random = rand() % max + min;
 
@@ -39,7 +34,7 @@ int * randomise ( int array[lotteryLength] )
 int main()
 {
     srand(time(NULL));
-    int input, rowInput, lotteryRows[maxRows][lotteryLength], lotteryRow[lotteryLength], temp = 0, rowTemp;
+    int input, rowInput, lotteryRows[maxRows][maxColumns], lotteryRow[maxColumns], temp = 0, rowTemp;
 
     char* filename = "/Users/felix/Documents/Github/university/C/Labs/lottery/lottery.txt";
 
@@ -58,6 +53,7 @@ int main()
         printf("2. Save current lottery row to file\n");
         printf("3. Read an existing lottery row from a file\n");
         printf("0. Exit the program \n");
+        printf( "\n" );
         printf("Enter your menu choice: ");
         scanf( "%i", &input );
         printf("\n");
@@ -70,29 +66,41 @@ int main()
 
             case 1:
 
+                printf( "Max rows allowed: 10\n" );
                 printf( "Enter number of rows: " );
                 scanf( "%i", &rowInput );
                 printf( "\n" );
 
-                for( int i = 0; i < rowInput; ++i )
+                if( rowInput < 10 && rowInput > 1 )
                 {
-                    randomise( lotteryRow );
-
-                    for( int j = 0; j < lotteryLength; ++j )
+                    for( int i = 0; i < rowInput; ++i )
                     {
-                        lotteryRows[ i ][ j ] = lotteryRow[j];
-                        printf( "%i ", lotteryRows[i][j] );
+                        randomise( lotteryRow );
+
+                        for( int j = 0; j < maxColumns; ++j )
+                        {
+                            lotteryRows[ i ][ j ] = lotteryRow[j];
+                            printf( "%i ", lotteryRows[i][j] );
+                        }
+                        printf( "\n" );
                     }
+
                     printf( "\n" );
+                    printf(": : : : : : : : : : : : : : : : : : : \n");
+                    printf( "Lottery rows successfully generated \n" );
+                    printf(": : : : : : : : : : : : : : : : : : : \n");
+
+                    temp = 1;
+                    rowTemp = rowInput;
                 }
-
-                printf( "\n" );
-                printf(": : : : : : : : : : : : : : : : : : : \n");
-                printf( "Lottery rows successfully generated \n" );
-                printf(": : : : : : : : : : : : : : : : : : : \n");
-
-                temp = 1;
-                rowTemp = rowInput;
+                else if( rowInput > 10 )
+                {
+                    printf( "To many rows\n" );
+                }
+                else
+                {
+                    printf( "To few rows\n" );
+                }
 
                 break;
 
@@ -104,7 +112,7 @@ int main()
 
                     for( int i = 0; i < rowTemp; ++i )
                     {
-                        for( int j = 0; j < lotteryLength; ++j )
+                        for( int j = 0; j < maxColumns; ++j )
                         {
                             fprintf( fileWrite, "%i ", lotteryRows[i][j] );
                         }
