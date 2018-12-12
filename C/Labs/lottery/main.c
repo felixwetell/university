@@ -81,8 +81,8 @@ int main()
                 scanf( "%i", &rowInput );
                 printf( "\n" );
 
-                // Checks if rows are more than 0 and less than 10
-                if( rowInput < 10 && rowInput > 1 )
+                // Checks if rows are more than or is 1 and less than or is 10
+                if( rowInput <= 10 && rowInput >= 1 )
                 {
                     // Adds array with random numbers to 2D-array (lotteryRows)
                     for( int i = 0; i < rowInput; ++i )
