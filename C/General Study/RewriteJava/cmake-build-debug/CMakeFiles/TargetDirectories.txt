@@ -1,0 +1,3 @@
+/Users/felix/Documents/Github/university/C/General Study/RewriteJava/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/felix/Documents/Github/university/C/General Study/RewriteJava/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/felix/Documents/Github/university/C/General Study/RewriteJava/cmake-build-debug/CMakeFiles/General_Study.dir

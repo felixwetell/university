@@ -36,7 +36,7 @@ int * randomise ( int array[maxColumns] )
 int main()
 {
     // Initializing random number generator
-    srand(time(NULL));
+    srand( time( NULL ) );
 
     // Initializing variables
     int input, rowInput, temp = 0;
