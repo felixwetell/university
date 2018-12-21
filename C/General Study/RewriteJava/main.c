@@ -25,3 +25,20 @@ int main()
     return 0;
 }
  */
+
+/*
+void add( int * number )
+{
+    ( * number )++;
+}
+
+int main()
+{
+    int number = 10;
+    printf( "%i", number );
+    printf( "\n" );
+
+    add( &number );
+    printf( "%i", number );
+}
+*/
