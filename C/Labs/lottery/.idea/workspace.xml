@@ -34,11 +34,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d04bb1d2-cb4a-4fb5-b6e2-2fb402dfabe1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lottery.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lottery.dir/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lottery" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lottery" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Java/Labs/lottery/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/Labs/lottery/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Java/Labs/lottery/src/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/Labs/lottery/src/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/Labs/lottery/out/production/lottery/Control.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/Labs/lottery/out/production/lottery/FileHandling.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/Labs/lottery/out/production/lottery/FileHandling.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/Labs/lottery/out/production/lottery/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/Labs/lottery/out/production/lottery/Model.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/Labs/lottery/out/production/lottery/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/Labs/lottery/out/production/lottery/View.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="179" column="20" selection-start-line="179" selection-start-column="20" selection-end-line="179" selection-end-column="20" />
+            <state relative-caret-position="425">
+              <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
             </state>
           </provider>
         </entry>
@@ -99,7 +99,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
@@ -109,7 +109,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,6 +120,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -167,17 +167,19 @@
       <workItem from="1544621080622" duration="351000" />
       <workItem from="1544697084260" duration="79000" />
       <workItem from="1544791245203" duration="35000" />
+      <workItem from="1547302429359" duration="199000" />
+      <workItem from="1547309384550" duration="1101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16596000" />
+    <option name="totallyTimeSpent" value="17896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14378029" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14862682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -236,8 +238,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="179" column="20" selection-start-line="179" selection-start-column="20" selection-end-line="179" selection-end-column="20" />
+        <state relative-caret-position="425">
+          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
         </state>
       </provider>
     </entry>
