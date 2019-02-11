@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900')
+
+html
+    margin: 0 !important
+
+.hero
+    font-family: 'Cinzel Decorative', cursive
+    text-transform: uppercase
+    height: 100vh
+    background-image: url("img/wood_planks.jpg")
+    background-size: cover
+    color: white
+    h1
+        font-size: 6em !important
+        font-weight: bolder
+    h2
+        font-size: 4em !important
+
+.gallery
+    height: 100vh
+    background-color: #4E4C4D
+
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev, .swiper-button-prev, .swiper-container-rtl .swiper-button-next
+        background-image: none
+
+    .swiper-button-next, .swiper-button-prev
+        fill: #e67e22
+
+    .swiper-container-rtl
+        .swiper-button-prev, .swiper-button-next
+            fill: #e67e22
+
+    .swiper-pagination
+        bottom: 0%
+        z-index: 200
+
+    .swiper-pagination-bullet-active
+        background: #e67e22
+
+    .swiper-slide
+        img
+            max-width: 40em !important
+            max-height: 20em !important
+
+.about
+    height: 100vh
+    img
+        max-height: 50vh

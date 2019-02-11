@@ -1,0 +1,36 @@
+.exercise {
+  padding-bottom: 2em;
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 3em;
+}
+/* Add your CSS below */
+
+.exercise-a h2[class="yes"]
+{
+    color: green;
+}
+
+.exercise-b h2:nth-child(2)
+{
+    color: blue;
+}
+
+.exercise-c h2:nth-of-type(3n+2)
+{
+    color: lavender;
+}
+
+.exercise-d .peacemaker+h2
+{
+    color: lightgreen;
+}
+
+.exercise-e h2:nth-last-child(1n-4)
+{
+    color: maroon;
+}
+
+.exercise-f h2[class*="m"]
+{
+    color: khaki;
+}
