@@ -1,45 +1,33 @@
+$(document).bind('touchmove', function(e) {
+	e.preventDefault();
+});
+
 $( function() {
     new fullpage('#gameFullpage',
     {
-        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+		anchors: ['start', 'question1', 'question2', 'question3', 'question4', 'question5', 'result'],
 
     	//Scrolling
     	css3: true,
-    	scrollingSpeed: 900,
+    	scrollingSpeed: 1200,
     	autoScrolling: true,
     	fitToSection: true,
     	fitToSectionDelay: 1000,
     	scrollBar: true,
     	easing: 'easeInOutCubic',
     	easingcss3: 'ease',
-    	loopBottom: false,
-    	loopTop: false,
-    	loopHorizontal: false,
-    	continuousVertical: false,
-    	continuousHorizontal: false,
-    	scrollHorizontally: false,
-    	interlockedSlides: false,
-    	dragAndMove: false,
-    	offsetSections: false,
-    	resetSliders: false,
     	fadingEffect: true,
-    	normalScrollElements: '#element1, .element2',
-    	scrollOverflow: false,
-    	scrollOverflowReset: false,
-    	scrollOverflowOptions: null,
-    	touchSensitivity: 0,
-    	normalScrollElementTouchThreshold: 5,
-    	bigSectionsDestination: null,
 
     	//Accessibility
-    	keyboardScrolling: false,
+    	keyboardScrolling: true,
     	animateAnchor: true,
     	recordHistory: true,
 
     	//Design
     	controlArrows: true,
     	verticalCentered: true,
-    	sectionsColor : ['#535c68', '#686de0', '#e056fd', '#000'],
+    	sectionsColor : ['#fff', '#f9ca24', '#f0932b', '#eb4d4b', '#6ab04c', '#be2edd', '#fff'],
     	paddingTop: '3em',
     	paddingBottom: '10px',
     	fixedElements: '#header, .footer',

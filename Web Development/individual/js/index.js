@@ -3,15 +3,16 @@ $( function() {
     {
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     	navigation: true,
+        anchors: ['start', 'why', 'how', 'game'],
     	navigationPosition: 'right',
-    	navigationTooltips: ['Home', 'Why', 'How', 'The Game'],
-    	showActiveTooltip: false,
+    	navigationTooltips: ['Start', 'Why', 'How', 'Game'],
+    	showActiveTooltip: true,
     	slidesNavigation: false,
     	slidesNavPosition: 'bottom',
 
     	//Scrolling
     	css3: true,
-    	scrollingSpeed: 900,
+    	scrollingSpeed: 1200,
     	autoScrolling: true,
     	fitToSection: true,
     	fitToSectionDelay: 1000,
@@ -38,14 +39,14 @@ $( function() {
     	bigSectionsDestination: null,
 
     	//Accessibility
-    	keyboardScrolling: false,
+    	keyboardScrolling: true,
     	animateAnchor: true,
     	recordHistory: true,
 
     	//Design
     	controlArrows: true,
     	verticalCentered: true,
-    	sectionsColor : ['#6ab04c', '#686de0', '#e056fd', '#000'],
+    	sectionsColor : ['#fff', '#6ab04c', '#e056fd', '#686de0'],
     	paddingTop: '3em',
     	paddingBottom: '10px',
     	fixedElements: '#header, .footer',
