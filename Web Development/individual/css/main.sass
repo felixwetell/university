@@ -25,7 +25,6 @@ body
 
 .btn-color
     background: $white
-    border-color: none !important
     box-shadow: 0 0 0px #fff
     -webkit-transition-duration: 0.5s
     -webkit-transition-timing-function: easeInOutCubic
@@ -46,3 +45,7 @@ body
 #fp-nav ul li .fp-tooltip
     color: $dark !important
     top: -4px
+
+@media ( max-height: 650px )
+    .btn
+        padding: 20px !important
