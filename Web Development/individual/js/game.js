@@ -91,26 +91,52 @@ $( function() {
 	});
 } );
 
-// $("form section input").click(function () {
-//
-//
-// 	let input = $(this);
-// 	console.log( input.is( ':checked' ) );
-// 	let group = input.attr( 'name' );
-// 	let label = input.parent();
-//
-// 	$( 'input[name=' + group + ']' ).each( function()
-// 	{
-// 		if( $(this).is( ':checked' ) )
-// 		{
-// 			console.log($(this));
-// 			label.addClass( 'active' );
-// 		}
-// 		else
-// 		{
-// 			// console.log('remove');
-// 			label.removeClass( 'active' );
-//
-// 		}
-// 	} );
-// });
+$( 'form' ).on( 'submit', function( e )
+{
+	e.stopPropagation();
+	e.preventDefault();
+	let form = $(this);
+	$( '#fail' ).text("");
+
+	var radio_groups = {}
+	$(":radio").each( function ()
+	{
+	    radio_groups[ this.name ] = true;
+	});
+
+	console.log(radio_groups);
+
+	i = 0;
+	j = 0;
+	for( group in radio_groups)
+	{
+		i++;
+		var checked = $('input[name="' + group + '"]:checked').length;
+		if( !checked )
+		{
+			var input = form.find( $('input[name="' + group + '"]').first() );
+			var wrapper = input.parent().parent();
+			$( '#fail' ).fadeIn( 'slow' );
+			$( '#fail' ).append( "Question" + i + ": no option selected <br>");
+			$( 'button[type="submit"]' ).text( 'Try Again' );
+			j++;
+		}
+	}
+
+	let gender = $("input[name='gender']:checked").val();
+	let hobby = $("input[name='hobby']:checked").val();
+	let person = $("input[name='person']:checked").val();
+	let my = $("input[name='my']:checked").val();
+	let answer = $("input[name='answer']:checked").val();
+
+	if( j == 0 )
+	{
+		$( '#fail' ).fadeOut( 'slow' );
+		$( 'button[type="submit"]' ).fadeOut();
+		$( '#success' ).fadeIn( 'slow' );
+		$( '#success' ).html
+		( 'I am a ' + gender + '<br> and I like to ' + hobby +
+		  '.<br>My favorite person is ' + person + '<br> and can you be my ' +
+	   	  my + '.<br> I promise you, the answer is always ' + answer);
+	}
+} );
