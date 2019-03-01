@@ -135,8 +135,8 @@ $( 'form' ).on( 'submit', function( e )
 		$( 'button[type="submit"]' ).fadeOut();
 		$( '#success' ).fadeIn( 'slow' );
 		$( '#success' ).html
-		( 'I am a ' + gender + '<br> and I like to ' + hobby +
-		  '.<br>My favorite person is ' + person + '<br> and can you be my ' +
-	   	  my + '.<br> I promise you, the answer is always ' + answer);
+		( 'I am a <span>' + gender + '</span><br> and I like to <span>' + hobby +
+		  '</span>.<br>My favorite person is <span>' + person + '</span><br> and can you be my <span>' +
+	   	  my + '</span>.<br> I promise you, the answer is always <span>' + answer + '</span>' );
 	}
 } );
