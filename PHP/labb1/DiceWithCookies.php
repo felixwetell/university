@@ -25,20 +25,19 @@
 
 			$disabled = true;
 
-				if ( !isset ( $_COOKIE [ 'nbrOfRounds' ] ) && !isset ( $_COOKIE [ 'sumOfAllRounds' ] ) )
-				{
-					$disabled = true;
-				}
-				else {
-                    $disabled = false;
-                }
-
+			if ( !isset ( $_COOKIE [ 'nbrOfRounds' ] ) && !isset ( $_COOKIE [ 'sumOfAllRounds' ] ) )
+			{
+				$disabled = true;
+			}
+			else {
+                $disabled = false;
+            }
 
 			if ( isset ( $_POST [ 'btnNewGame' ] ) )
 			{
 			    $value = 0;
                 $_COOKIE [ 'nbrOfRounds' ] = $value;
-                $_COOKIE [ 'nbrOfRounds' ] = $value;
+                $_COOKIE [ 'sumOfAllRounds' ] = $value;
 
 
                 echo "New Game!";
