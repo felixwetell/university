@@ -1,0 +1,198 @@
+# Translation of Themes - Scaffold in English (UK)
+# This file is distributed under the same license as the Themes - Scaffold package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-12-06 02:28:03+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: en_GB\n"
+"Project-Id-Version: Themes - Scaffold\n"
+
+#. Description of the plugin/theme
+msgid "Scaffold is a lightweight starter theme built using core WordPress functions. It doesn't use any frameworks or libraries, this makes it fast, simple and easy to customize!"
+msgstr "Scaffold is a lightweight starter theme built using core WordPress functions. It doesn't use any frameworks or libraries, this makes it fast, simple and easy to customise!"
+
+#. Theme Name of the plugin/theme
+msgid "Scaffold"
+msgstr "Scaffold"
+
+#: inc/extras.php:54
+msgid "Read the full article"
+msgstr "Read the full article"
+
+#: functions.php:196
+msgid "Hide Notice"
+msgstr "Hide Notice"
+
+#. translators: 1: plugin link
+#: functions.php:191
+msgid "Easily change the font of your website with our new plugin - %1$s"
+msgstr "Easily change the font of your website with our new plugin - %1$s"
+
+#. Template Name of the plugin/theme
+msgid "Full-width Template"
+msgstr "Full-width Template"
+
+#: woocommerce/functions.php:19
+msgid "Checkout"
+msgstr "Checkout"
+
+#: template-parts/menu-1.php:15
+msgid "Site Navigation"
+msgstr "Site Navigation"
+
+#: template-parts/content.php:40
+msgid "Continue reading &rarr;"
+msgstr "Continue reading &rarr;"
+
+#: template-parts/content-page.php:34 template-parts/content.php:43
+msgid "Pages:"
+msgstr "Pages:"
+
+#: template-parts/content-none.php:47
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+
+#: template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+
+#. translators: %s: link to new post admin screen
+#: template-parts/content-none.php:25
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+
+#: template-parts/content-none.php:16
+msgid "Nothing Found"
+msgstr "Nothing Found"
+
+#. translators: %s: the search query
+#: search.php:24
+msgid "Search Results for: %s"
+msgstr "Search Results for: %s"
+
+#: inc/template-tags.php:118
+msgid "Posts Navigation"
+msgstr "Posts Navigation"
+
+#: inc/template-tags.php:117
+msgid "Newer Posts &rarr;"
+msgstr "Newer Posts &rarr;"
+
+#: inc/template-tags.php:116
+msgid "&larr; Older Posts"
+msgstr "&larr; Older Posts"
+
+#: inc/template-tags.php:102
+msgid "Next Post: <span>%title</span>"
+msgstr "Next Post: <span>%title</span>"
+
+#: inc/template-tags.php:101
+msgid "Previous Post: <span>%title</span>"
+msgstr "Previous Post: <span>%title</span>"
+
+#: inc/template-tags.php:86
+msgctxt "number of comments"
+msgid "% Comments"
+msgstr "% Comments"
+
+#: inc/template-tags.php:86
+msgid "1 Comment"
+msgstr "1 Comment"
+
+#: inc/template-tags.php:86
+msgid "Leave a comment"
+msgstr "Leave a comment"
+
+#: inc/template-tags.php:85
+msgid "Discussion: "
+msgstr "Discussion: "
+
+#. translators: %s: tags list
+#: inc/template-tags.php:79
+msgid "Tags: %1$s"
+msgstr "Tags: %1$s"
+
+#. translators: %s: list of categories
+#: inc/template-tags.php:71
+msgid "Categories: %1$s"
+msgstr "Categories: %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:67 inc/template-tags.php:75
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:53 template-parts/content-page.php:25
+msgid "(Edit)"
+msgstr "(Edit)"
+
+#. translators: %s: link to author archives
+#: inc/template-tags.php:48
+msgctxt "post author"
+msgid "by %s"
+msgstr "by %s"
+
+#. translators: %s: link to date archives
+#: inc/template-tags.php:42
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Posted on %s"
+
+#: functions.php:112
+msgid "Add widgets here."
+msgstr "Add widgets here."
+
+#: functions.php:110
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: functions.php:42
+msgid "Primary Menu"
+msgstr "Primary Menu"
+
+#. translators: %2$s: theme author.
+#: footer.php:26
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s by %2$s."
+
+#: comments.php:75
+msgid "Comments are closed."
+msgstr "Comments are closed."
+
+#: comments.php:63
+msgid "Newer Comments &rarr;"
+msgstr "Newer Comments &rarr;"
+
+#: comments.php:60
+msgid "&larr; Older Comments"
+msgstr "&larr; Older Comments"
+
+#. translators: %s: post title.
+#: comments.php:32
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr "One Reply to &ldquo;%s&rdquo;"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:36
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Replies to &ldquo;%2$s&rdquo;"
+
+#. Author URI of the plugin/theme
+msgid "https://dannycooper.com/"
+msgstr "https://dannycooper.com/"
+
+#. Author of the plugin/theme
+msgid "DannyCooper"
+msgstr "DannyCooper"
+
+#. Theme URI of the plugin/theme
+msgid "https://dannycooper.com/scaffold"
+msgstr "https://dannycooper.com/scaffold"

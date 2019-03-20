@@ -16,6 +16,7 @@ public class View extends WindowAdapter
     private JMenuItem save;
     private JMenuItem exit;
     private Controller controller;
+    private JLabel label;
 
     /**
      * GUI shown for the user with some buttons in a menu, a frame, a panel and
@@ -26,12 +27,11 @@ public class View extends WindowAdapter
         // Initializing variables
         controller = new Controller( this );
 
-        // Initializing GUI variables
-        frame = new JFrame( "Lottery Row" );
-        frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
-        frame.setPreferredSize( new Dimension(600, 400) );
-        frame.addWindowListener(controller);
-
+        // Initializing GUI variabes
+        //        frame = new JFrame( "Lottery Row" );
+        //        frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+        //        frame.setPreferredSize( new Dimension(600, 400) );
+        //        frame.addWindowListener(controller);l
         panel = new JPanel();
         textArea = new JTextArea();
 
@@ -42,6 +42,8 @@ public class View extends WindowAdapter
         open = new JMenuItem( "Open" );
         save = new JMenuItem( "Save" );
         exit = new JMenuItem( "Exit" );
+        label = new JLabel("saker");
+
 
         // Adds buttons to menu
         menu.add(clear);
