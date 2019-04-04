@@ -13,8 +13,8 @@ $( function() {
     	//Scrolling
     	css3: true,
     	scrollingSpeed: 1200,
-    	autoScrolling: true,
-    	fitToSection: true,
+    	autoScrolling: false,
+    	fitToSection: false,
     	fitToSectionDelay: 1000,
     	scrollBar: true,
     	easing: 'easeInOutCubic',
